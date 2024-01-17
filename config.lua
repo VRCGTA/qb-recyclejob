@@ -11,7 +11,7 @@ Config = {
 	DrawPackageLocationBlip = true,
 
 	PickupActionDuration 	= math.random(4000, 6000),
-	DeliveryActionDuration 	= 5000,
+	DeliveryActionDuration 	= 3000,
 
 	MaxItemsReceived 	= 5,
 	MinItemReceivedQty 	= 2,
