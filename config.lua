@@ -11,10 +11,10 @@ Config = {
 	DrawPackageLocationBlip = true,
 
 	PickupActionDuration 	= math.random(4000, 6000),
-	DeliveryActionDuration 	= 3000,
+	DeliveryActionDuration 	= 5000,
 
 	MaxItemsReceived 	= 5,
-	MinItemReceivedQty 	= 2,
+	MinItemReceivedQty 	= 4,
 	MaxItemReceivedQty 	= 6,
 	ChanceItem 			= "cryptostick",
 	LuckyItem 			= "rubber",

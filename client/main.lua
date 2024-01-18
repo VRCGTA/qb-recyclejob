@@ -224,7 +224,7 @@ local function RegisterDeliveyTarget()
           label = Lang:t("text.hand_in_package"),
         },
       },
-      distance = 1.0
+      distance = 2.0
     })
   else
     deliveryZone = BoxZone:Create(coords, 1, 1, {
@@ -405,7 +405,7 @@ function RegisterPickupTarget(coords)
           label = Lang:t("text.get_package"),
         },
       },
-      distance = 1.0
+      distance = 1.5
     })
   else
     pickupZone = BoxZone:Create(targetCoords, 4, 1.5, {
