@@ -210,7 +210,7 @@ local function RegisterDeliveyTarget()
   local coords = vector3(Config.DropLocation.x, Config.DropLocation.y, Config.DropLocation.z)
 
   if Config.UseTarget then
-    deliveryZone = exports['qb-target']:AddBoxZone(deliveryTargetID, coords, 1, 1, {
+    deliveryZone = exports['qb-target']:AddBoxZone(deliveryTargetID, coords, 1.5, 4, {
       name = deliveryTargetID,
       heading = 270,
       minZ = Config.DropLocation.z - 2.0,
@@ -224,10 +224,10 @@ local function RegisterDeliveyTarget()
           label = Lang:t("text.hand_in_package"),
         },
       },
-      distance = 2.0
+      distance = 1.0
     })
   else
-    deliveryZone = BoxZone:Create(coords, 1, 1, {
+    deliveryZone = BoxZone:Create(coords, 1.5, 4, {
       name = deliveryTargetID,
       heading = 270,
       minZ = Config.DropLocation.z - 2.0,
