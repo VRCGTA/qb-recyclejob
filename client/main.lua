@@ -51,7 +51,7 @@ local function RegisterEntranceTarget()
       heading = 44.0,
       minZ = Config.OutsideLocation.z - 1.0,
       maxZ = Config.OutsideLocation.z + 2.0,
-      debugPoly = false,
+      debugPoly = true,
     }, {
       options = {
         {
