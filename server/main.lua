@@ -13,7 +13,7 @@ RegisterNetEvent('qb-recycle:server:getItem', function()
     Wait(500)
   end
 
-  local chance = math.random(1, 1000)
+  local chance = math.random(1, 3000)
   if chance < 2 then
     Player.Functions.AddItem(Config.ChanceItem, 1, false)
     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.ChanceItem], 'add')
